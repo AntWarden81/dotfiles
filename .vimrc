@@ -9,10 +9,12 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'dracula/vim'
 Plugin 'mboughaba/i3config.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'chrisbra/Colorizer'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -44,8 +46,11 @@ color jellybeans
 syntax on
 :set shiftwidth=4
 :set expandtab
-colorscheme jellybeans
 :set guifont=mononoki-Regular:h30
 
 set ignorecase
 set smartcase
+filetype on
+filetype plugin on
+filetype indent on
+
