@@ -43,7 +43,7 @@ syntax on
 :set shiftwidth=4
 :set expandtab
 colorscheme jellybeans
-:set guifont=mononoki-Regular:h20
+:set guifont=mononoki-Regular:h30
 
 set ignorecase
 set smartcase
