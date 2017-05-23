@@ -14,6 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'chrisbra/Colorizer'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
+Plugin 'nanotech/jellybeans.vim'
 
 
 " All of your Plugins must be added before the following line
