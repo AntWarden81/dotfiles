@@ -16,7 +16,6 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nanotech/jellybeans.vim'
 
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -32,15 +31,14 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-if has("terminfo")
-  let &t_Co=16
-  let &t_AB="\<Esc>[%?%p1%{8}%<%t%p1%{40}%+%e%p1%{92}%+%;%dm"
-  let &t_AF="\<Esc>[%?%p1%{8}%<%t%p1%{30}%+%e%p1%{82}%+%;%dm"
-else
-  let &t_Co=16
-  let &t_Sf="\<Esc>[3%dm"
-  let &t_Sb="\<Esc>[4%dm"
+if $TERM == "xterm-256color"
+    set t_Co=256
 endif
+
+set cursorline
+set cursorcolumn
+hi CursorLine   cterm=NONE ctermbg=237 ctermfg=NONE guibg=darkred guifg=white
+hi CursorColumn cterm=NONE ctermbg=235 ctermfg=NONE guibg=darkred guifg=white
 
 syntax on
 :set tabstop=4
@@ -52,7 +50,7 @@ syntax on
 :set autoindent
 :set cindent
 
-color jellybeans 
+color jellybeans
 :set tabstop=4
 syntax on
 :set shiftwidth=4
