@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/cc/cs61c/sp17/class/cs61c-aom/Projects/proj2-aom'
-let g:netrw_dirhist_2='/home/cc/cs61c/sp17/class/cs61c-aom/.vim/colors'
-let g:netrw_dirhist_3='/home/ltran/.vim'
-let g:netrw_dirhist_4='/etc/fonts/infinality/styles.conf.avail/infinality'
-let g:netrw_dirhist_5='/home/ltran/dotfiles'
